@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFEDD5"
+    android:gravity="center_horizontal"
+    android:fontFamily="@font/medium">
+
+    <!-- 標題 -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="租借表單"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:fontFamily="@font/heavy"
+        android:layout_marginBottom="10dp" />
+
+    <!-- 返回按鈕 -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="返回"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F97316"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/medium"
+        android:layout_marginBottom="5dp" />
+
+    <!-- 卡片容器 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/viewIdentity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/medium"
+                android:text="身份"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="名字"
+                android:fontFamily="@font/medium"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewClothesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/medium"
+                android:text="服裝名稱"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/viewClothesColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/medium"
+                android:text="服裝顏色"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/clothesSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/clothesSize_options"
+                android:fontFamily="@font/medium" />
+
+            <TextView
+                android:id="@+id/eClothesNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/medium"
+                android:padding="12dp"
+                android:text="數量"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- 數量調整按鈕 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#FDBA74"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ClothesNum"
+                    android:layout_width="72dp"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="#D1C4E9"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#FDBA74"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 錯誤提示文字 -->
+
+
+            <!-- 送出按鈕 -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#F97316"
+                android:fontFamily="@font/medium"
+                android:text="送出"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:onClick="add"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/responseTextAddClothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/medium"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#E53935"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#E53935"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+

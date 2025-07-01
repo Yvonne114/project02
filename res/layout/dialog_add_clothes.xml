@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editClothesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="服裝名稱" />
+
+        <EditText
+            android:id="@+id/editClothesColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="顏色" />
+
+        <Spinner
+            android:id="@+id/clothesSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/clothesSize_options"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editClothesNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="數量" />
+
+
+
+        <Spinner
+            android:id="@+id/clothesType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/clothesType_options"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editSuitableDance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="適合舞碼" />
+
+        <EditText
+            android:id="@+id/editClothesPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="圖片網址" />
+
+        <TextView
+            android:id="@+id/responseTextAddClothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<!-- res/layout/size_num_row.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <Spinner
+        android:id="@+id/clothesSizeSpinner"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:entries="@array/clothesSize_options" />
+
+    <EditText
+        android:id="@+id/clothesNumEdit"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="數量" />
+
+    <Button
+        android:id="@+id/btnRemoveSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刪除" />
+</LinearLayout>

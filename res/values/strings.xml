@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Application 11</string>
+    <string-array name="identity_options">
+        <item>社員</item>
+        <item>幹部</item>
+    </string-array>
+    <string-array name="clothesType_options">
+        <item>現代</item>
+        <item>芭蕾</item>
+        <item>中國舞</item>
+        <item>少數民族</item>
+        <item>歐洲</item>
+    </string-array>
+    <string-array name="clothesSize_options">
+        <item>XXS</item>
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+        <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>Not Known</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+

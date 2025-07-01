@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDD5"
+    android:padding="24dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/sizesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#F97316"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 標題 -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增服裝"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:fontFamily="@font/heavy"
+            android:layout_marginBottom="10dp" />
+
+        <!-- 服裝名稱 -->
+        <EditText
+            android:id="@+id/editClothesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="服裝名稱"
+            android:fontFamily="@font/medium"
+            android:layout_marginBottom="5dp"
+            android:textSize="10sp" />
+
+        <!-- 顏色 -->
+        <EditText
+            android:id="@+id/editClothesColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="顏色"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/medium"
+
+            android:textSize="10sp" />
+
+        <!-- 數量 -->
+        <EditText
+            android:id="@+id/editClothesNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="數量"
+            android:inputType="number"
+            android:layout_marginBottom="5dp"
+
+            android:padding="12dp"
+            android:textSize="10sp" />
+
+        <!-- 尺寸 -->
+        <Spinner
+            android:id="@+id/clothesSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:spinnerMode="dropdown"
+            android:fontFamily="@font/medium"
+            android:entries="@array/clothesSize_options" />
+
+        <!-- 種類 -->
+        <Spinner
+            android:id="@+id/clothesType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:spinnerMode="dropdown"
+            android:fontFamily="@font/medium"
+            android:entries="@array/clothesType_options" />
+
+        <!-- 適合舞碼 -->
+        <EditText
+            android:id="@+id/editSuitableDance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="適合舞碼"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/medium"
+            android:padding="12dp"
+            android:textSize="10sp" />
+
+        <!-- 圖片名稱顯示 -->
+        <TextView
+            android:id="@+id/editClothesPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="尚未選擇圖片"
+            android:textColor="#888888"
+            android:fontFamily="@font/medium"
+            android:layout_marginBottom="12dp"
+            android:textSize="10sp" />
+
+        <!-- 錯誤訊息 -->
+        <TextView
+            android:id="@+id/responseTextAddClothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 選擇圖片按鈕 -->
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="選擇圖片"
+            android:backgroundTint="#F97316"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:fontFamily="@font/medium"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 送出按鈕 -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="送出"
+            android:backgroundTint="#EA580C"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="@font/medium"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>

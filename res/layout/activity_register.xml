@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDD5"> <!-- 柔和暖橘背景 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="註冊帳號"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#B45309"
+            android:fontFamily="@font/heavy"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#A16207" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/medium"
+            android:backgroundTint="#A16207" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="學號"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/medium"
+            android:backgroundTint="#A16207" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="身分證字號"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/medium"
+            android:backgroundTint="#A16207" />
+
+        <Spinner
+            android:id="@+id/identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/identity_options"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:fontFamily="@font/medium"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#F97316"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="register" />
+
+        <TextView
+            android:id="@+id/responseTextRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#B45309"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

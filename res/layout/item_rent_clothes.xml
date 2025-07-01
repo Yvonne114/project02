@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageClothes"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textClothesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothes Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textClothesType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothes Type"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租借"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#FFEDD5"
+    android:fontFamily="@font/medium"
+    tools:context=".FragmentProfile">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="租借管理系統"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:fontFamily="@font/heavy"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnCheckRent"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F97316"
+        android:text="查看租借"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/medium"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCheckMoney"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F97316"
+        android:text="查看繳費"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/medium"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#D14343"
+        android:text="登出"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="@font/medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentProfile"
+        android:textSize="16sp"
+        android:textColor="#999999"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
